@@ -133,9 +133,8 @@ include_directories(
   /home/lee/scout_ws/src/AD-scout/src/nav_pkg/include
   #/home/lee/scout_ws/src/AD-scout/src/scout_ros/scout_msgs/msg
 )
-add_executable(nav src/master.cpp src/localization.cpp src/control.cpp src/motion_planner.cpp )
-
-target_link_libraries(nav
+add_executable(master src/master.cpp src/localization.cpp src/controlPurePursuit.cpp )
+target_link_libraries(master
   ${catkin_LIBRARIES}
   /home/lee/scout_ws/src/AD-scout/src/scout_ros/scout_msgs/msg
 )

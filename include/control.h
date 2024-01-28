@@ -1,30 +1,26 @@
 #pragma once
-#include <iostream>
-#include <cmath>
-#include <vector>
-#include <fstream>
-#include <string>
-#include <scout.h>
-#include <math.h>
+#include <master.h>
 #define _USE_MATH_DEFINES
-
-using namespace std;
 
 class Control {
 private:
-    Scout scout;
-    // double pi = 3.14159265358979323846;
     double lookahead = 0;
     double alpha = 0;
     int target_index = 0;
     double angle = 0;
-    double target_velocity = 1;
-
+    double targetHeading = 0;
+    double integral;
+    double previous_error;
+    double Kp, Kd, Ki;
+    struct Position{
+        double x;
+        double y;
+        int idx;
+    };
 public:
-    void PurePursuit(vector < vector <double> > local_path, Scout* scout);
-    //void Stanley();
-    double LongitudinalController();
+    Control() : Kp(0.01), Ki(0.1), Kd(0.02), integral(0), previous_error(0) {};
+    void PurePursuit(vector < vector <double> >, Scout*);
     double LateralController(Scout*);
-    //Scout* getCtrl();
-    //void run();
+    double PID(Scout*);
+    double run(vector < vector <double> >, Scout*);
 };

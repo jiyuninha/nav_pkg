@@ -1,10 +1,7 @@
 #pragma once
-#include <cmath>
-#include <vector>
+#include <master.h>
 #include <fstream>
-#include <string>
-#include <scout.h>
-using namespace std;
+#include <sstream>
 
 class Local
 {
@@ -19,9 +16,12 @@ private:
     double y = 0;
     double z = 0;
 
-    std::vector<std::vector<double>> global_map;
+    vector<vector<double>> global_map;
+    vector < vector <double> > self_path;
 public:
     void readCSV();
     void findClosestWaypoint(Scout*);
     vector<vector<double>> getGP();
+    vector < vector <double> > find_local_path(vector<vector<double>>, Scout*);
+    vector <vector <double>> run(Scout*);
 };

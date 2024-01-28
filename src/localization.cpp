@@ -1,12 +1,4 @@
-#include <iostream>
-#include <cmath>
-#include <vector>
-#include <fstream>
-#include <sstream>
-#include <string>
-#include <scout.h>
-#include "localization.h"
-using namespace std;
+#include <localization.h>
 
 void Local::readCSV() {
     vector<Waypoint> waypoints;
@@ -38,24 +30,34 @@ void Local::readCSV() {
     file.close();
 }
 
-void Local::findClosestWaypoint(Scout* scout) { // 스카우트에 현재 위치 저장
+void Local::findClosestWaypoint(Scout* scout) {
     int closestIndex = 0;
     double minDistance = -1.0;
     int save_index = 0;
-    //cout << scout.getPosition_x() << endl;
     for (int i = 0; i < this->global_map.size(); i++) {
-        //cout << scout->getPosition_x() << endl;
         double distance = sqrt(pow(scout->getPosition_x() - this->global_map[i][0], 2) + pow(scout->getPosition_y() - this->global_map[i][1], 2));
-        if ((minDistance > distance || minDistance == -1) && save_index <= i) {
+        if ((minDistance > distance || minDistance == -1.0) && save_index <= i) {
             minDistance = distance;
             closestIndex = i;
             save_index = i;
         }
     }
     scout->setPosition_idx(closestIndex);
-    //cout << scout.getPosition_idx() << endl;
 }
 
-vector<vector<double>> Local::getGP(){
-    return this->global_map;
+vector<vector<double>> Local::run(Scout* scout){
+    this->findClosestWaypoint(scout);
+    return this->find_local_path(this->global_map, scout);
+}
+
+vector<vector<double>> Local::find_local_path(vector<vector<double>> global_map, Scout* scout) {
+    self_path.clear();
+    int end_local_index = 0;
+    if (scout->getPosition_idx() + 100 > global_map.size()) end_local_index = global_map.size();
+    else end_local_index = scout->getPosition_idx() + 100;
+    
+    for (int i = scout->getPosition_idx(); i < end_local_index; ++i) {
+        self_path.push_back( { global_map[i][0], global_map[i][1] });
+    }
+    return self_path;
 }
