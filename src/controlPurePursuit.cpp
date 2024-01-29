@@ -18,15 +18,19 @@ void Control::PurePursuit(vector < vector <double> > local_path, Scout* scout) {
     if(targetHeading < 0)targetHeading += 360;
     double alpha = targetHeading - scout->getHeading();
     this->angle = fmod(atan2(2.0 * 0.5 * sin(alpha * (M_PI / 180.0)) / lookahead, 1.0), 2*M_PI);
+    
+    delete target;
+    return;
 }
+
 double Control::LateralController(Scout* scout) { 
     double angVel = this->angle/0.02;
     return angVel;
 }
 
 double Control::PID(Scout* scout){
-    double targetAngVel = this->angle; // (rad/s) -> targetAngVel;
-    double angVel = scout->getAngVel(); // current scout's angvel
+    double targetAngVel = this->angle/0.02; // (rad/s) -> targetAngVel;
+    double angVel = scout->getAngVel();
     double error = targetAngVel - angVel;
     integral += error * 0.02;
     double derivative = (error - previous_error) / 0.02;
@@ -34,10 +38,10 @@ double Control::PID(Scout* scout){
     previous_error = error;
     return output;
 }
+
 double Control::run(vector < vector <double> > local_path, Scout* scout){
     this->PurePursuit(local_path, scout);
     this->LateralController(scout);
-    double resultAngVel;
     if(abs(targetHeading - scout->getHeading()) < 0.001){
         return resultAngVel;
     }

@@ -9,6 +9,7 @@ private:
     int target_index = 0;
     double angle = 0;
     double targetHeading = 0;
+    double resultAngVel;
     double integral;
     double previous_error;
     double Kp, Kd, Ki;
