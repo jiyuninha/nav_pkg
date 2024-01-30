@@ -17,6 +17,12 @@ This package is a code that follows a waypoint-based global path for Scout 2.0. 
 
 <br/><br/>
 
+## **Sensors**
+---
+- Ouster 64ch 
+<p align="center"><img src="./fig/mount.png"  width="200" height="620"/>
+
+
 ## **Updates**
 ---
 [**scout_nav**](https://github.com/jiyuninha/nav_pkg_stanley) based on stanley method. This package will be updated continuously. 
@@ -84,7 +90,7 @@ roslaunch nav_pkg nav.launch
 
 <br/><br/>
 
-##**Video**
+## **Video**
 ---
 [**Scout Navigation**](https://youtu.be/myETR4duN9g)
 
