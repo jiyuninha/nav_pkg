@@ -20,7 +20,7 @@ This package is a code that follows a waypoint-based global path for Scout 2.0. 
 ## **Sensors**
 ---
 - Ouster 64ch 
-<p align="center"><img src="./fig/mount.png"  width="400" height="600"/>
+<p align="center"><img src="./fig/mount.jpg"  width="400" height="600"/>
 
 
 ## **Updates**
