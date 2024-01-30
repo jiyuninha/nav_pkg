@@ -2,7 +2,7 @@
 # 🚀 SCOUT 2.0 Navigation 
 ---
 
-This package is a code that follows a waypoint-based global path for Scout 2.0. It performed path tracking based on the pure persuit algorithm and PID steering angle control.
+This package is a code that follows a waypoint-based global path for Scout 2.0. It performed path tracking based on the pure pursuit algorithm and PID steering angle control.
 
 
 <br/><br/>
@@ -95,5 +95,5 @@ roslaunch nav_pkg nav.launch
 <p align="center"><img src="./fig/globalpath.png"  width="600" height="400"/>
 <br/><br/>
 
-<p align="center">[**Scout Navigation**](https://youtu.be/myETR4duN9g)
+<p align="center"> [**Scout Navigation**](https://youtu.be/myETR4duN9g)
 
