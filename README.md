@@ -94,5 +94,6 @@ roslaunch nav_pkg nav.launch
 ---
 <p align="center"><img src="./fig/globalpath.png"  width="600" height="400"/>
 <br/><br/>
+
 [**Scout Navigation**](https://youtu.be/myETR4duN9g)
 
