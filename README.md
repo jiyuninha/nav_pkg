@@ -1,5 +1,8 @@
   
 # 🚀 SCOUT 2.0 Navigation 
+---
+
+This package is a code that follows a waypoint-based global path for Scout 2.0. It performed path tracking based on the pure persuit algorithm and PID steering angle control.
 
 
 <br/><br/>
