@@ -1,8 +1,5 @@
-<p align="center"><img src="./fig/sparo.png"  width="620" height="200"/>  
-<br/>
-
   
-# 🚀 SPARO-GROUNDED-SAM
+# 🚀 SCOUT 2.0 Navigation 
 [![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://www.youtube.com/watch?v=JRD_xuqtHZU)
 <br/>
 

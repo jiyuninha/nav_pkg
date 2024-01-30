@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="nav_pkg" type="pure" name="pure_node" output="screen">
+    </node>
+</launch>
