@@ -1,41 +1,26 @@
   
 # 🚀 SCOUT 2.0 Navigation 
-[![YouTube](https://badges.aleen42.com/src/youtube.svg)](https://www.youtube.com/watch?v=JRD_xuqtHZU)
-<br/>
 
-본 패키지는 [**Grounded-SAM**](https://github.com/IDEA-Research/Grounded-Segment-Anything)을 보다 user들이 더 쉽게 사용할 수 있도록 wrapping한 패키지입니다. 본 패키지의 현재 추가된 기능은 [**Updates**](#🍇-updates)를 참고하시길 바랍니다.
 
 <br/><br/>
 
-## **🤖 Prerequisites**
+## **Prerequisites**
 ---
-- **10GB** 이상의 GPU RAM
-- **Docker** 및 **Docker-Compose**
-  - **Docker**를 설치를 하지 않으신 분들은 본 [**Document**](https://docs.docker.com/engine/install/ubuntu/)를 참고하십시오.
-  - **Docker-Compose**를 설치 하지 않으신 분들은 본 [**Document**](https://docs.docker.com/compose/install/linux/#install-the-plugin-manually)를 참고하십시오.
-
+- LiDAR localization [**Fast Localization**](https://github.com/hwan0806/FAST-LOCALIZATION)
+  - pcd data(submap) [**data**](https://drive.google.com/file/d/1uJNYgAl9EpmnVGMoPCPvhDYSY3XAQz-t/view?usp=sharing)
+  
+- [**scout package**](https://github.com/agilexrobotics/scout_ros)
+- [**ugv_sdk**](https://github.com/westonrobot/ugv_sdk)
 
 <br/><br/>
 
-## **🤖 Updates**
+## **Updates**
 ---
-- **`2023/05/15`**: 본 패키지를 통해 **`Object Segmentation`** and **`Object Detection`** 사용을 위한 [**Tutorial Video**](https://www.youtube.com/watch?v=JRD_xuqtHZU) Release.
-- **`2023/05/14`**: [**GroundingDINO**](https://github.com/IDEA-Research/GroundingDINO) 기반의 [**Grounded-SAM**](https://github.com/IDEA-Research/Grounded-Segment-Anything)을 통한 **`Object Segmentation`** and **`Object Detection`** 기능 추가. 
 
 
 <br/><br/>
 
-## **🤖 Contents Table**
----
-- [**🤖 Development Enviorment Setup**](#🤖-development-enviorment-setup)
-  - [**Install with Docker**](#install-with-docker)
-- [**🤖 Create Detection Dataset**](#🤖-create-detection-dataset)
-  - [**😺 Usage for Object Detection**](#😺-usage-for-object-detection)
-  - [**😺 Usage for Object Segmentation**](#😺-usage-for-object-segmentation)
-
-<br/><br/>
-
-## **🤖 Development Enviorment Setup**
+## **Development Enviorment Setup**
 ---
 The code requires **`python>=3.8`**, as well as **`pytorch>=1.7`** and **`torchvision>=0.8`**. Please follow the instructions here to install both PyTorch and TorchVision dependencies. Installing both PyTorch and TorchVision with CUDA support is strongly recommended.
 
