@@ -93,5 +93,6 @@ roslaunch nav_pkg nav.launch
 ## **Result and Video**
 ---
 <p align="center"><img src="./fig/globalpath.png"  width="600" height="400"/>
-[**Scout Navigation**](https://youtu.be/myETR4duN9g)
+<br/><br/>
+[[**Scout Navigation**](http://img.youtube.com/vi/myETR4duN9g/0.jpg)](https://youtu.be/myETR4duN9g)
 
