@@ -81,6 +81,8 @@ roslaunch nav_pkg nav.launch
 
 <br/><br/>
 
-###**Video**
-[[Scout Navigation]](https://youtu.be/myETR4duN9g)
+##**Video**
+---
+[[Scout Navigation]]
+(https://youtu.be/myETR4duN9g)
 
