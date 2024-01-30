@@ -29,7 +29,7 @@ This package is a code that follows a waypoint-based global path for Scout 2.0. 
 
 <br/><br/>
 
-## **Development Enviorment Setup**
+## **Development Environment Setup**
 ---
 - ROS noetic, ubuntu20.04
 
@@ -90,7 +90,8 @@ roslaunch nav_pkg nav.launch
 
 <br/><br/>
 
-## **Video**
+## **Result and Video**
 ---
+<p align="center"><img src="./fig/globalpath.png"  width="600" height="400"/>
 [**Scout Navigation**](https://youtu.be/myETR4duN9g)
 
