@@ -41,7 +41,7 @@ The pure persuit algorithm is a path tracking algorithm. This algorithm follows 
 PID
 <br/><br/>
 The PID control algorithms are proportional, integral, and differential control. The measured value is gradually updated to a value proportional to the set value, and the measured value and the set value become the same. PI control has poor responsiveness to disturbances, so D differential control greatly controls disturbances.
-
+<br/><br/>
 
 #### Development Environment Setup
 ---
