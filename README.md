@@ -72,19 +72,19 @@ cd ~/loc
 catkin_make
 ```
 
-3. first terminar
+3. first terminal
 ```
 cd ~/loc
 source devel/setup.bash
 roslaunch ouster-ros sensor.launch
 ```
-4. second terminar
+4. second terminal
 ```
 cd ~/loc 
 source devel/setup.bash
 roslaunch fast_localization localization_ouster64.launch
 ```
-5. third terminar
+5. third terminal
 ```
 cd ~/scout_ws 
 source devel/setup.bash
@@ -95,7 +95,7 @@ cd ..
 cd launch 
 roslaunch scout_robot_base.launch
 ```
-5. fourth terminar
+5. fourth terminal
 ```
 cd ~/scout_ws
 source devel/setup.bash
