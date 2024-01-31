@@ -25,8 +25,8 @@ This package is a code that follows a waypoint-based global path for Scout 2.0. 
 
 ## **Updates**
 ---
-[**scout_nav**](https://github.com/jiyuninha/nav_pkg_stanley) based on stanley method. This package will be updated continuously. 
-[**nav_pkg**]() is document. This document will be updated continuously.
+- [**scout_nav**](https://github.com/jiyuninha/nav_pkg_stanley) based on stanley method. This package will be updated continuously. 
+- [**nav_pkg**]() is document. This document will be updated continuously.
 
 <br/><br/>
 
