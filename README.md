@@ -34,11 +34,11 @@ This package is a code that follows a waypoint-based global path for Scout 2.0. 
 ---
 <p align="center"><img src="./fig/purepursuit.jpg" width="600" height="500"/>
 <br/><br/>
-**Pure Pursuit**
+### **Pure Pursuit**
 <br/><br/>
 The pure persuit algorithm is a path tracking algorithm. This algorithm follows a reference path using only the vehicle's kinetic equation and the geometry of the reference path. It calculates the steering angle that can reach the target point in front of it from the current position of the scout. The linear velocity was commanded at a constant value of 0.8 m/s. The scout constantly follows to a target point in front. The shorter the Lookahead distance, the more likely it is to vibrate along the path. The vehicle gives a long lookahead, but the scout is small at 0.8 m/s, so it gives it 3.5 m so that it does not spin early.
 <br/><br/>
-**PID**
+### **PID**
 <br/><br/>
 The PID control algorithms are proportional, integral, and differential control. The measured value is gradually updated to a value proportional to the set value, and the measured value and the set value become the same. PI control has poor responsiveness to disturbances, so D differential control greatly controls disturbances.
 
